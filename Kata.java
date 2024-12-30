@@ -71,8 +71,10 @@ public class Kata {
 	}
 
 	public boolean isSquare(int num){
+		int sqrt =(int) Math.sqrt(num);
+		return sqrt * sqrt == num;
 
-		return num * num;
+		
 
 
 
@@ -116,5 +118,8 @@ public class Kata {
 // collect two integer
 // when dividing, if the second integer is zero.the result must be zero.
 
-// dec
+// declare function 
+// declare function name
+// collect integer
+// return true if the number entered is a square number else return false 
 
