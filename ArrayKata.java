@@ -3,9 +3,9 @@ public class ArrayKata{
 	public int maximumIn(int[]arrayofinteger){
 	int largest = arrayofinteger[0];
 
-		for(int afeez : arrayofinteger){
-			if (afeez > largest){
-				largest = afeez;
+		for(int number : arrayofinteger){
+			if (number > largest){
+				largest = number;
 			}
 
 		}
