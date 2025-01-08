@@ -22,7 +22,7 @@ import java.util.Scanner;
 	select pizza type
 
 	1. sapa size
-	2. small money
+	2. small money 
 	3. Big boys
 	4. Odogwu 
 """);
@@ -31,6 +31,8 @@ import java.util.Scanner;
 	
 
 	if(pizzatype == 1){ 
+
+	System.out.println(numberOfPeople);
 			int numberofboxes = (numberOfPeople + sapasize - 1) / sapasize;
 			
 		System.out.println("number of boxes " + numberofboxes);
@@ -39,7 +41,11 @@ import java.util.Scanner;
 	int totalslices = numberofboxes * sapasize;
 	int leftoverslices = totalslices - numberOfPeople;
 	System.out.println("leftoverslices " + leftoverslices);
-
+	System.out.println(numberofboxes);
+	System.out.println( numberofboxes * sapasizeprice);
+	long totalprice = numberofboxes * sapasizeprice;
+	System.out.println(totalprice);
+	System.out.println("total price: " + totalprice);
 
 	}if (pizzatype == 2){
 			int numberofboxes = (numberOfPeople + smallmoney - 1) / smallmoney;
@@ -49,7 +55,7 @@ import java.util.Scanner;
 	int totalslices = numberofboxes * smallmoney;
 	int leftoverslices = totalslices - numberOfPeople;
 	System.out.println("leftoverslices " + leftoverslices);
-
+	System.out.println("total price: " + numberofboxes * 2900);
 
 	}if (pizzatype == 3){
 			int numberofboxes = (numberOfPeople + Bigboys - 1) / Bigboys;
@@ -59,7 +65,7 @@ import java.util.Scanner;
 	int totalslices = numberofboxes * Bigboys;
 	int leftoverslices = totalslices - numberOfPeople;
 	System.out.println("leftoverslices " + leftoverslices);
-
+	System.out.println("total price: " + numberofboxes * 4000);
 
 	}if (pizzatype == 4){
 			int numberofboxes = (numberOfPeople + Odogwu - 1) / Odogwu;
@@ -69,8 +75,8 @@ import java.util.Scanner;
 	int totalslices = numberofboxes * Odogwu;
 	int leftoverslices = totalslices - numberOfPeople;
 	System.out.println("leftoverslices " + leftoverslices);
-
-
+	System.out.println("total price: " + numberofboxes * 5200);
+ 
 
 	}
 
